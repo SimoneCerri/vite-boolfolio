@@ -1,6 +1,8 @@
 <script>
 import axios from 'axios';
 import ProjectCard from './components/ProjectCard.vue';
+import 'bootstrap/dist/css/bootstrap.css';
+
 
 export default
   {
@@ -42,10 +44,32 @@ export default
 </script>
 
 <template>
-  <header>Header</header>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" aria-current="page">Projects
+                <span class="visually-hidden">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
   <main>
-    <div>
-      <ProjectCard v-for="project in projects.data" :project />
+    <div class="container">
+      <div class="row py-5">
+        <ProjectCard v-for="project in projects.data" :project />
+      </div>
     </div>
   </main>
   <footer>Footer</footer>
