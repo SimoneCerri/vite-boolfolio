@@ -5,13 +5,17 @@ import ProjectCard from './components/ProjectCard.vue';
 export default
   {
     name: 'App',
+    props:
+    {
+
+    },
     components:
     {
       ProjectCard,
     },
     data() {
       return {
-        posts: [],
+        projects: [],
         base_url: 'http://127.0.0.1:8000',
         api_projects_url: '/api/projects',
         error_message: '',
@@ -22,7 +26,7 @@ export default
       callApi(url) {
         axios.get(url).then(response => {
           //console.log(response.data.projects);
-          this.posts = response.data.projects;
+          this.projects = response.data.projects;
         }
         ).catch(err => {
           //console.log(err.message);
@@ -38,9 +42,13 @@ export default
 </script>
 
 <template>
-  <div>
-    <ProjectCard v-for="project in projecs" />
-  </div>
+  <header>Header</header>
+  <main>
+    <div>
+      <ProjectCard v-for="project in projects.data" :project />
+    </div>
+  </main>
+  <footer>Footer</footer>
 </template>
 
 <style></style>
