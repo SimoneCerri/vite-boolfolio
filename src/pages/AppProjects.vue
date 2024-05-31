@@ -2,6 +2,7 @@
 import axios from 'axios';
 import ProjectCard from '../components/ProjectCard.vue';
 import 'bootstrap/dist/css/bootstrap.css';
+import AppJumbostronz from "../components/AppJumbostronz.vue";
 
 export default
     {
@@ -9,6 +10,7 @@ export default
         components:
         {
             ProjectCard,
+            AppJumbostronz,
         },
         data() {
             return {
@@ -39,6 +41,7 @@ export default
 </script>
 
 <template>
+    <AppJumbostronz page-title="PROJECTS" link="about" btn-title="About" />
     <main>
         <div class="container">
             <div class="row py-5">
