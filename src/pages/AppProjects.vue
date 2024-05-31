@@ -44,7 +44,7 @@ export default
     <AppJumbostronz page-title="PROJECTS" link="about" btn-title="About" />
     <main>
         <div class="container">
-            <div class="row py-5">
+            <div class="row py-5 flex-wrap">
                 <ProjectCard v-for="project in projects.data" :project />
             </div>
         </div>
