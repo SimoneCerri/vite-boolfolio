@@ -1,7 +1,6 @@
 <script>
 import axios from "axios";
 import AppJumbostronz from "../components/AppJumbostronz.vue";
-/* import axios from "axios"; */
 
 export default
     {
@@ -26,13 +25,13 @@ export default
             },
             callSingleProject(url) {
                 axios.get(url).then(response => {
-                    this.$project = response;
-                    console.log(this.$project);
+                    this.$project = response.data.response;
+                    //console.log(response.data.response);
                 })
             }
         },
         mounted() {
-            /* this.projectId() */
+            this.projectId()
             this.callSingleProject(this.base_url + this.api_projects_url + this.project_id)
         }
     }
@@ -45,7 +44,7 @@ export default
             <div class="col">
                 <div class="card">
                     <div class="card-title">
-                        <!-- {{ $route.params.id }} -->
+                        {{ $project.title }}
                     </div>
                 </div>
             </div>
