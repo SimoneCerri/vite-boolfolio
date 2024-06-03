@@ -31,7 +31,7 @@ export default
                     //console.log(err.message);
                     this.error_message = err.message;
                 })
-            }
+            },
         },
         mounted() {
             let url = this.base_url + this.api_projects_url;
@@ -45,7 +45,7 @@ export default
     <main>
         <div class="container">
             <div class="row py-5 flex-wrap">
-                <ProjectCard v-for="project in projects.data" :project />
+                <ProjectCard v-for="project in projects.data" :project @click="" />
             </div>
         </div>
     </main>

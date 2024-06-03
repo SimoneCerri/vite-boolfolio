@@ -46,7 +46,7 @@ export default
                         <span>
                             Copyright &copy; 2024<span class="text-danger"> Simone Cerri.</span>
                         </span>
-                        <img width="150" src="../assets/img/logosmall.jpg">
+                        <img width="150" src="/img/logosmall.jpg">
                     </div>
                 </div>
             </div>

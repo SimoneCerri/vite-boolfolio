@@ -25,8 +25,13 @@ export default
             },
             callSingleProject(url) {
                 axios.get(url).then(response => {
-                    this.$project = response.data.response;
-                    console.log(response.data.response);
+                    if (response.data.success) {
+                        this.$project = response.data.response;
+                        //console.log(response.data.response); 
+                    }
+                    else {
+                        //404
+                    }
                 })
             }
         },

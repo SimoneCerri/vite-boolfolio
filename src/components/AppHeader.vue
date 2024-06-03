@@ -33,7 +33,7 @@ export default
         <nav class="py-2">
             <div class="container d-flex justify-content-between align-items-center">
                 <div class="">
-                    <img width="50px" src="../assets/img/logosmall.jpg">
+                    <img width="50px" src="/img/logosmall.jpg">
                 </div>
                 <div class="" id="">
                     <ul class="list-unstyled d-flex gap-3 m-0 nav-item">
