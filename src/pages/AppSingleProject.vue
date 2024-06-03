@@ -21,12 +21,12 @@ export default
         {
             projectId() {
                 this.project_id = '/' + parseInt(this.$route.params.id);
-                console.log(this.project_id);
+                //console.log(this.project_id);
             },
             callSingleProject(url) {
                 axios.get(url).then(response => {
                     this.$project = response.data.response;
-                    //console.log(response.data.response);
+                    console.log(response.data.response);
                 })
             }
         },
@@ -39,12 +39,22 @@ export default
 
 <template>
     <AppJumbostronz page-title="PROJECT" link="projects" btn-title="Projects" />
-    <div class="container">
+    <div class="container py-5">
         <div class="row">
             <div class="col">
-                <div class="card">
+                <div class="card text-center">
                     <div class="card-title">
-                        {{ $project.title }}
+                        <strong>
+                            {{ $project.title }}
+                        </strong>
+                    </div>
+                    <div class="sub-title text-center py-2" v-if="$project.type">
+                        {{ $project.type.name }}
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-evenly">
+                        <div class="btn btn-dark" v-for="$tech in $project.technologies">
+                            {{ $tech.name }}
+                        </div>
                     </div>
                 </div>
             </div>
