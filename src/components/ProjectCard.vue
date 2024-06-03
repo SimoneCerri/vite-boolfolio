@@ -27,7 +27,7 @@ export default
       <div class="card-body p-0">
         <img width="100%" :src="project.img" alt="">
       </div>
-      <div class="card-footer d-flex justify-content-evenly" v-if="!project.technologies.lenght">
+      <div class="card-footer d-flex justify-content-evenly" v-if="project.technologies.length > 0">
         <div class="btn btn-dark text-danger" v-for="tech in project.technologies">
           {{ tech.name }}
         </div>
