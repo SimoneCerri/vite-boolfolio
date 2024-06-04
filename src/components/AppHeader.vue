@@ -8,19 +8,23 @@ export default
                     [
                         {
                             'title': 'Home',
-                            'link': 'home'
+                            'link': 'home',
+                            'active': false,
                         },
                         {
                             'title': 'Projects',
-                            'link': 'projects'
+                            'link': 'projects',
+                            'active': false,
                         },
                         {
                             'title': 'About',
-                            'link': 'about'
+                            'link': 'about',
+                            'active': false,
                         },
                         {
                             'title': 'Contacts',
-                            'link': 'contacts'
+                            'link': 'contacts',
+                            'active': false,
                         },
                     ]
             }
@@ -37,7 +41,7 @@ export default
                 </div>
                 <div class="" id="">
                     <ul class="list-unstyled d-flex gap-3 m-0 nav-item">
-                        <li class="" v-for="link in menu">
+                        <li class="my_btn_nav" v-for="link in menu">
                             <RouterLink class="nav-link" :to="{ name: link.link }">{{ link.title }}</RouterLink>
                         </li>
                     </ul>

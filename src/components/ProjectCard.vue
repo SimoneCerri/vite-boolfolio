@@ -12,7 +12,7 @@ export default
 <template>
   <div class="col-6 text-center py-3">
     <RouterLink :to="{ name: 'project', params: { id: project.id } }" class="text-decoration-none">
-      <div class="card h-100">
+      <div class="card h-100 shadow">
         <div class="card-title bg-danger rounded-top mb-0">
           <span class="fw-bold fs-2">
             <strong>
@@ -28,7 +28,8 @@ export default
         <div class="card-body p-0">
           <img width="100%" :src="project.img" alt="">
         </div>
-        <div class="card-footer d-flex justify-content-evenly" v-if="project.technologies.length > 0">
+        <div class="card-footer d-flex justify-content-evenly bg-secondary bg-gradient"
+          v-if="project.technologies.length > 0">
           <div class="btn btn-dark text-danger" v-for="tech in project.technologies">
             {{ tech.name }}
           </div>

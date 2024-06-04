@@ -29,8 +29,16 @@
   width: auto;
   background-color: black;
   border: solid 1px;
-  vertical-align: middle;
-  /* margin: auto 50; */
+}
+
+.my_btn_nav:hover {
+  color: red;
+  text-decoration: underline;
+  text-underline-position: below;
+  text-underline-offset: 2em;
+  text-decoration-thickness: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 /* #endregion Common */

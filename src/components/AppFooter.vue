@@ -12,11 +12,11 @@ export default
     <footer>
         <section class="bg-white border-top border-black">
             <div class="container-fluid mt-5">
-                <div class="row text-center justify-content-center">
+                <div class="row text-center justify-content-center align-items-center">
                     <div class="col-3 my_hr rounded">
 
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 pt-3">
                         <ul class="list-unstyled d-flex justify-content-evenly fs-4">
                             <li>
                                 <a href="https://github.com/SimoneCerri" target="_blank" rel="noopener noreferrer">
