@@ -13,10 +13,10 @@ export default
 
 <template>
     <AppJumbostronz page-title="HOME" link="projects" btn-title="Projects" />
-    <div class="jumbotron p-3 mb-4 bg-light rounded-3">
+    <div class="jumbotron p-3 mb-4 bg-white rounded-3">
         <div class="container py-5 d-flex flex-column align-items-center gap-5">
             <div class="logo_laravel">
-                <img src="/img/logo.jpg" alt="">
+                <img src="/img/logo_bg_white.jpg" alt="">
             </div>
             <h1 class="display-5 fw-bold text-center">
                 Welcome to Simone's portfolio

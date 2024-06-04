@@ -30,7 +30,7 @@ export default
                         //console.log(response.data.response); 
                     }
                     else {
-                        //404
+                        this.$router.push({ name: 'NotFound' });
                     }
                 })
             }

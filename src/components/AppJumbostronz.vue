@@ -12,7 +12,7 @@ export default
 </script>
 
 <template>
-    <section class="bg-dark text-danger">
+    <section class="bg-dark text-danger shadow">
         <div class="container my_h_small d-flex align-items-center justify-content-between">
             <h1>
                 <strong>

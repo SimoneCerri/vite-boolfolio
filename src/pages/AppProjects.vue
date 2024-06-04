@@ -24,8 +24,13 @@ export default
         {
             callApi(url) {
                 axios.get(url).then(response => {
-                    //console.log(response.data.projects);
-                    this.projects = response.data.projects;
+                    if (response.data.success) {
+                        //console.log(response.data.projects);
+                        this.projects = response.data.projects;
+                    }
+                    else {
+                        this.$router.push({ name: 'not-found' });
+                    }
                 }
                 ).catch(err => {
                     //console.log(err.message);
