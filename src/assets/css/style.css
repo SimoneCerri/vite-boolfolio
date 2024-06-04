@@ -17,54 +17,10 @@
 
 
 /* #region Common */
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-.my_hr {
-  height: 10px;
-  width: auto;
-  background-color: black;
-  border: solid 1px;
-}
-
-.my_btn_nav:hover {
-  color: red;
-  text-decoration: underline;
-  text-underline-position: below;
-  text-underline-offset: 2em;
-  text-decoration-thickness: 5px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.my_active {
-  color: red !important;
-  text-decoration: underline !important;
-  text-underline-position: below !important;
-  text-underline-offset: 2em !important;
-  text-decoration-thickness: 5px !important;
-  text-transform: uppercase !important;
-  font-weight: bold !important;
-}
-
-.my_url_links:hover {
-  border-radius: 50%;
-  box-shadow: -1px 11px 12px 0px rgba(214, 29, 29, 0.75);
-  -webkit-box-shadow: -1px 11px 12px 0px rgba(214, 29, 29, 0.75);
-  -moz-box-shadow: -1px 11px 12px 0px rgba(214, 29, 29, 0.75);
-
-  span {
-    color: #333 !important;
-  }
-}
-
-.underline {
-  text-decoration: underline !important;
-  color: red;
 }
 
 /* #endregion Common */
@@ -118,9 +74,51 @@
   height: 150px;
 }
 
+.underline {
+  text-decoration: underline !important;
+  color: red;
+}
+
 /* #endregion Main */
 
 
 /* #region Footer */
+.my_hr {
+  height: 10px;
+  width: auto;
+  background-color: black;
+  border: solid 1px;
+}
+
+.my_btn_nav:hover {
+  color: red;
+  text-decoration: underline;
+  text-underline-position: below;
+  text-underline-offset: 2em;
+  text-decoration-thickness: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.my_active {
+  color: red !important;
+  text-decoration: underline !important;
+  text-underline-position: below !important;
+  text-underline-offset: 2em !important;
+  text-decoration-thickness: 5px !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+}
+
+.my_url_links:hover {
+  border-radius: 50%;
+  box-shadow: -1px 11px 12px 0px rgba(214, 29, 29, 0.75);
+  -webkit-box-shadow: -1px 11px 12px 0px rgba(214, 29, 29, 0.75);
+  -moz-box-shadow: -1px 11px 12px 0px rgba(214, 29, 29, 0.75);
+
+  span {
+    color: #333 !important;
+  }
+}
 
 /* #endregion Footer */

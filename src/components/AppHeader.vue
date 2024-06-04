@@ -9,22 +9,18 @@ export default
                         {
                             'title': 'Home',
                             'link': 'home',
-                            'active': false,
                         },
                         {
                             'title': 'Projects',
                             'link': 'projects',
-                            'active': false,
                         },
                         {
                             'title': 'About',
                             'link': 'about',
-                            'active': false,
                         },
                         {
                             'title': 'Contacts',
                             'link': 'contacts',
-                            'active': false,
                         },
                     ]
             }
