@@ -43,21 +43,41 @@ export default
 </script>
 
 <template>
-    <AppJumbostronz page-title="PROJECT" link="projects" btn-title="Projects" />
+    <AppJumbostronz :page-title="'PROJECT - ' + $project.title" link="projects" btn-title="Projects" />
     <div class="container py-5">
         <div class="row">
             <div class="col">
-                <div class="card text-center">
-                    <div class="card-title">
-                        <strong>
-                            {{ $project.title }}
-                        </strong>
+                <div class="text-center">
+                    <div class="fs-1 d-flex align-items-center justify-content-evenly">
+                        <a class="text-decoration-none d-flex flex-column align-items-center" href="{{ $project.url1 }}"
+                            target="_blank" rel="noopener noreferrer">
+                            <font-awesome-icon icon="fa-brands fa-github" size="xl" style="color: #000000;" />
+                            <span class="fs-6 text-danger">See on GitHub</span>
+                        </a>
+                        <div class="">
+                            <h1 class="">
+                                Title : <strong>{{ $project.title }}</strong>
+                            </h1>
+                        </div>
+                        <a class="text-decoration-none d-flex flex-column align-items-center" href="{{ $project.url1 }}"
+                            target="_blank" rel="noopener noreferrer">
+                            <font-awesome-icon icon="fa-brands fa-github" size="xl" style="color: #000000;" />
+                            <span class="fs-6 text-danger">See on GitHub</span>
+                        </a>
                     </div>
-                    <div class="sub-title text-center py-2" v-if="$project.type">
-                        {{ $project.type.name }}
+                    <div class="text-center py-2" v-if="$project.type">
+                        <h3 class="text-dark">
+                            Type : <strong class="text-danger"> {{ $project.type.name }} </strong>
+                        </h3>
                     </div>
-                    <div class="card-footer d-flex align-items-center justify-content-evenly">
-                        <div class="btn btn-dark" v-for="$tech in $project.technologies">
+                    <div class="d-flex align-items-center justify-content-center py-2">
+                        <img class="rounded-5" width="2000px" :src="$project.img" alt="">
+                    </div>
+                    <div class="mt-4">
+                        <span class="fs-3">Technologies : </span>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-evenly py-5">
+                        <div class="btn btn-dark text-danger" v-for="$tech in $project.technologies">
                             {{ $tech.name }}
                         </div>
                     </div>

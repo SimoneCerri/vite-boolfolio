@@ -1,7 +1,6 @@
 <script>
 import axios from 'axios';
 import ProjectCard from '../components/ProjectCard.vue';
-import 'bootstrap/dist/css/bootstrap.css';
 import AppJumbostronz from "../components/AppJumbostronz.vue";
 
 export default

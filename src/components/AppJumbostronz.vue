@@ -1,4 +1,5 @@
 <script>
+
 export default
     {
         name: 'AppJumbostronz',
@@ -12,7 +13,7 @@ export default
 </script>
 
 <template>
-    <section class="bg-dark text-danger shadow">
+    <header class="bg-dark text-danger shadow">
         <div class="container my_h_small d-flex align-items-center justify-content-between">
             <h1>
                 <strong>
@@ -21,7 +22,7 @@ export default
             </h1>
             <RouterLink class="btn btn-secondary text-danger fw-bold" :to="{ name: link }">{{ btnTitle }}</RouterLink>
         </div>
-    </section>
+    </header>
 </template>
 
 <style></style>

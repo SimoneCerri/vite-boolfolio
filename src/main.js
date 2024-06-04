@@ -7,6 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faReddit } from '@fortawesome/free-brands-svg-icons'
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 library.add(faLinkedin, faGithub, faReddit)
 
