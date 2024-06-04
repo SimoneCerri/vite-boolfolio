@@ -42,7 +42,10 @@ export default
                 <div class="" id="">
                     <ul class="list-unstyled d-flex gap-3 m-0 nav-item">
                         <li class="my_btn_nav" v-for="link in menu">
-                            <RouterLink class="nav-link" :to="{ name: link.link }">{{ link.title }}</RouterLink>
+                            <RouterLink exactActiveClass="my_active" class="nav-link" :to="{ name: link.link }">{{
+                                link.title
+                                }}
+                            </RouterLink>
                         </li>
                     </ul>
                 </div>

@@ -41,6 +41,16 @@
   font-weight: bold;
 }
 
+.my_active {
+  color: red !important;
+  text-decoration: underline !important;
+  text-underline-position: below !important;
+  text-underline-offset: 2em !important;
+  text-decoration-thickness: 5px !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+}
+
 /* #endregion Common */
 
 
