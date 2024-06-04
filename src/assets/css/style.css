@@ -24,6 +24,15 @@
   box-sizing: border-box;
 }
 
+.my_hr {
+  height: 10px;
+  width: auto;
+  background-color: black;
+  border: solid 1px;
+  vertical-align: middle;
+  /* margin: auto 50; */
+}
+
 /* #endregion Common */
 
 

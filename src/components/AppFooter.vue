@@ -12,12 +12,12 @@ export default
     <footer>
         <section class="bg-white border-top border-black">
             <div class="container-fluid mt-5">
-                <div class="row text-center">
-                    <div class="col-4">
-                        <hr>
+                <div class="row text-center justify-content-center">
+                    <div class="col-3 my_hr rounded">
+
                     </div>
-                    <div class="col-4">
-                        <ul class="list-unstyled d-flex justify-content-evenly">
+                    <div class="col-3">
+                        <ul class="list-unstyled d-flex justify-content-evenly fs-4">
                             <li>
                                 <a href="https://github.com/SimoneCerri" target="_blank" rel="noopener noreferrer">
                                     <font-awesome-icon icon="fa-brands fa-github" size="xl" style="color: #000000;" />
@@ -37,11 +37,11 @@ export default
                             </li>
                         </ul>
                     </div>
-                    <div class="col-4">
-                        <hr>
+                    <div class="col-3 rounded my_hr">
+
                     </div>
                 </div>
-                <div class="row justify-content-center text-center mt-3">
+                <div class="row justify-content-center text-center mt-3 py-5">
                     <div class="col d-flex flex-column align-items-center gap-3">
                         <span>
                             Copyright &copy; 2024<span class="text-danger"> Simone Cerri.</span>

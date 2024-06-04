@@ -59,10 +59,10 @@ export default
                                 Title : <strong>{{ $project.title }}</strong>
                             </h1>
                         </div>
-                        <a class="text-decoration-none d-flex flex-column align-items-center" href="{{ $project.url1 }}"
+                        <a class="text-decoration-none d-flex flex-column align-items-center" href="{{ $project.url2 }}"
                             target="_blank" rel="noopener noreferrer">
-                            <font-awesome-icon icon="fa-brands fa-github" size="xl" style="color: #000000;" />
-                            <span class="fs-6 text-danger">See on GitHub</span>
+                            <font-awesome-icon icon="fa-solid fa-magnifying-glass" size="xl" style="color: #000000;" />
+                            <span class="fs-6 text-danger">See the Preview</span>
                         </a>
                     </div>
                     <div class="text-center py-2" v-if="$project.type">
