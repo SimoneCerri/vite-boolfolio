@@ -51,6 +51,22 @@
   font-weight: bold !important;
 }
 
+.my_url_links:hover {
+  border-radius: 50%;
+  box-shadow: -1px 11px 12px 0px rgba(214, 29, 29, 0.75);
+  -webkit-box-shadow: -1px 11px 12px 0px rgba(214, 29, 29, 0.75);
+  -moz-box-shadow: -1px 11px 12px 0px rgba(214, 29, 29, 0.75);
+
+  span {
+    color: #333 !important;
+  }
+}
+
+.underline {
+  text-decoration: underline !important;
+  color: red;
+}
+
 /* #endregion Common */
 
 

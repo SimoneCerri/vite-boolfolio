@@ -49,20 +49,20 @@ export default
             <div class="col">
                 <div class="text-center">
                     <div class="fs-1 d-flex align-items-center justify-content-evenly">
-                        <a class="text-decoration-none d-flex flex-column align-items-center" href="{{ $project.url1 }}"
-                            target="_blank" rel="noopener noreferrer">
+                        <a class="text-decoration-none d-flex flex-column align-items-center my_url_links"
+                            href="{{ $project.url1 }}" target="_blank" rel="noopener noreferrer">
                             <font-awesome-icon icon="fa-brands fa-github" size="xl" style="color: #000000;" />
-                            <span class="fs-6 text-danger">See on GitHub</span>
+                            <span class="fs-6 text-danger fw-bold">See on GitHub</span>
                         </a>
                         <div class="">
                             <h1 class="">
                                 Title : <strong>{{ $project.title }}</strong>
                             </h1>
                         </div>
-                        <a class="text-decoration-none d-flex flex-column align-items-center" href="{{ $project.url2 }}"
-                            target="_blank" rel="noopener noreferrer">
+                        <a class="text-decoration-none d-flex flex-column align-items-center my_url_links"
+                            href="{{ $project.url2 }}" target="_blank" rel="noopener noreferrer">
                             <font-awesome-icon icon="fa-solid fa-magnifying-glass" size="xl" style="color: #000000;" />
-                            <span class="fs-6 text-danger">See the Preview</span>
+                            <span class="fs-6 text-danger fw-bold">See the Preview</span>
                         </a>
                     </div>
                     <div class="text-center py-2" v-if="$project.type">
@@ -77,7 +77,7 @@ export default
                         <span class="fs-3">Technologies : </span>
                     </div>
                     <div class="d-flex align-items-center justify-content-evenly py-5">
-                        <div class="btn btn-dark text-danger" v-for="$tech in $project.technologies">
+                        <div class="btn btn-lg btn-dark text-danger" v-for="$tech in $project.technologies">
                             {{ $tech.name }}
                         </div>
                     </div>

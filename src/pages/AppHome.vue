@@ -46,9 +46,15 @@ export default
     </div>
 
     <div class="content mb-4">
-        <div class="container">
+        <div class="container d-flex justify-content-center">
             <p class="text-center">
-                For more information about the Dev you can visit my <a href="">contacts</a> page.
+                For more information about the J-Dev you can visit my
+            </p>
+            <RouterLink class="nav-link px-1 text-danger underline" :to="{ name: 'contacts' }">
+                contacts
+            </RouterLink>
+            <p>
+                page.
             </p>
         </div>
     </div>
